@@ -1,9 +1,14 @@
+/**
+ * Entidade Funcionario que herda de Operador, Nome e Iniciais e todos seus métodos.
+ * Implementa a associação com a classe Departamento.
+ */
+
 public class Funcionario extends Operador {
     private String matricula;
     private Departamento departamento;
 
     public Funcionario(String nome, String matricula, Departamento departamento){
-        super(nome);
+        super(nome); // Passa o nome para o construtor da classe mãe (Operador)
         this.matricula = matricula;
         this.departamento = departamento;
     }

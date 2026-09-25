@@ -1,6 +1,11 @@
+/**
+ * Classe central de registros de custos da empresa.
+ * Concentra os relacionamentos com Funcionario, Departamento e Categoria.
+ */
 public class Custo {
     private double valor;
     private String descricao;
+    // Data simplificada com tipos primitivos para facilitar consulta de estatísticas por mẽs
     private int dia;
     private int mes;
     private int ano;
@@ -16,7 +21,7 @@ public class Custo {
         this.ano = ano;
         this.categoria = categoria;
         this.departamento = departamento;
-        this.funcionarioLogado = funcionarioLogado;
+        this.funcionarioLogado = funcionarioLogado;// Registro do criador do custo
     }
 
     public double getValor(){
@@ -50,11 +55,11 @@ public class Custo {
     public Funcionario getFuncionario(){
         return this.funcionarioLogado;
     }
-
+    // Método para exibição pradoniazda da data
     public String getData(){
         return dia + "/" + mes +"/" + ano;
     }
-
+    // Setters mantidos para permitir possível funcionalidade de edição
     public void setValor(double valor){
         this.valor = valor;
     }
