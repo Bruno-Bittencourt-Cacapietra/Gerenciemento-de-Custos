@@ -1,6 +1,6 @@
 public enum Categoria {
     AQUISICAO_DE_BENS("Aquisição de Bens"),
-    MANUTECAO_DE_BENS("Manutenção de Bens"),
+    MANUTENCAO_DE_BENS("Manutenção de Bens"),
     OUTROS_SERVICOS("Outros Serviços");
 
     private final String descricao;
@@ -12,7 +12,7 @@ public enum Categoria {
     public String getDescricao(){
         return this.descricao;
     }
-
+    @Override
     public String toString(){
         return this.descricao;
     }

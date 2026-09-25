@@ -86,7 +86,7 @@ public class Custo {
     public void setFuncionario(Funcionario funcionarioLogado){
         this.funcionarioLogado = funcionarioLogado;
     }
-
+    @Override
     public String toString(){
         return "Valor: " + valor + "\nDescrição: " + descricao + "\nData: " + getData() + "\nCategoria: " + categoria + "\nDepartamento: " + departamento + "\nCadastrado por: " + funcionarioLogado.getNome();
     }

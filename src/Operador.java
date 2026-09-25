@@ -27,7 +27,7 @@ public  abstract class Operador {
         return iniciais.toUpperCase();
 
     }
-    
+    @Override
     public String toString(){
         return "Nome: " + nome + "\nIniciais: " + getIniciais();
     }
