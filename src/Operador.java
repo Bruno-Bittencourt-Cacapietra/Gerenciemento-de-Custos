@@ -14,23 +14,17 @@ public  abstract class Operador {
     }
 
     public String getIniciais(){
-        if(nome.isBlank()){
+        if(nome == null || nome.isBlank()){
             return "Não há um nome registrado";
         }
 
+        String[] partes = this.nome.trim().split("\\s+");
+        String iniciais = "";
 
-        char[] inicial = new char[nome.length()];
-        inicial[0] = nome.charAt(0);
-        int count = 1;
-        for(int i = 1; i < nome.length(); i++){
-            if(nome.charAt(i-1) == ' '){
-                inicial[count] = nome.charAt(i);
-                count++;
-            }
+        for(int i = 0; i < partes.length; i++){
+                iniciais += partes[i].charAt(0);
         }
-
-        String n = new String (inicial);
-        return n;
+        return iniciais.toUpperCase();
 
     }
     
