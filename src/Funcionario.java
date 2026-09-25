@@ -26,7 +26,6 @@ public class Funcionario extends Operador {
 
     @Override
     public String toString(){
-        super.toString();
-        return "\nMatrícula: " + matricula + "\nDepartamento: " + departamento;
+        return super.toString() +"\nMatrícula: " + matricula + "\nDepartamento: " + departamento;
     }
 }
