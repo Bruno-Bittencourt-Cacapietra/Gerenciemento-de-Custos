@@ -1,4 +1,4 @@
-public  class Operador {
+public  abstract class Operador {
     private String nome;
 
     public Operador(String nome){
@@ -32,6 +32,10 @@ public  class Operador {
         String n = new String (inicial);
         return n;
 
+    }
+    
+    public String toString(){
+        return "Nome: " + nome + "/nIniciais: " + getIniciais();
     }
 
 }
