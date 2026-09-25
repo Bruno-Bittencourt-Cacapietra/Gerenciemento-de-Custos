@@ -1,5 +1,5 @@
 public  abstract class Operador {
-    private String nome;
+    protected String nome;
 
     public Operador(String nome){
         this.nome = nome;
@@ -35,7 +35,7 @@ public  abstract class Operador {
     }
     
     public String toString(){
-        return "Nome: " + nome + "/nIniciais: " + getIniciais();
+        return "Nome: " + nome + "\nIniciais: " + getIniciais();
     }
 
 }
