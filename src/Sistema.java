@@ -1,13 +1,13 @@
 import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.List;
 
 public class Sistema{
 
-    private Lista<Funcionario> funcionario;
+    private List<Funcionario> funcionario;
     private Funcionario operadorAtual;
     private Scanner scanner;
 
-    public Sistema(Lista<Funcionario> funcionario, Scanner scanner){
+    public Sistema(List<Funcionario> funcionario, Scanner scanner){
 
         this.funcionario = funcionario;
         this.scanner = scanner;
@@ -15,9 +15,9 @@ public class Sistema{
 
     public void trocarOperador(){
 
-        if (funcionario == null || funcionario.isEmpty){
+        if (funcionario == null || funcionario.isEmpty()){
             System.out.println("Não há funcionarios cadastrados");
-            return
+            return;
         }
 
         System.out.println("=========Funcionarios Cadastrados============");
